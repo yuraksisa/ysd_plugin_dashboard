@@ -1,0 +1,5 @@
+require 'sinatra/yito_extension/ysd_sinatra_dashboard'
+require 'sinatra/yito_extension/ysd_sinatra_yito_core_configuration'
+
+require 'ysd_plugin_dashboard_extension'
+require 'ysd_plugin_dashboard_init'

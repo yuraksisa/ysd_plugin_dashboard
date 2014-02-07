@@ -1,0 +1,9 @@
+dashboard:
+  configuration: Configuració
+  media: magatzem Media
+  files: magatzem Fitxers
+site:
+  settings:
+    title: Configuració general
+  title: Títol de la web
+  slogan: Slogan de la web

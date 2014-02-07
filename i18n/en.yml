@@ -1,0 +1,9 @@
+dashboard:
+  configuration: Configuration
+  media: Media storage
+  files: Files storage
+site:
+  settings:
+    title: General settings
+  title: Site title
+  slogan: Site slogan
