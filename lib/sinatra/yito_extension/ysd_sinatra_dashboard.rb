@@ -15,10 +15,14 @@ module Sinatra
         #
         # Dashboard
         #
-        app.get '/dashboard', :allowed_usergroups => ['user', 'staff'] do 
+        #app.get '/dashboard', :allowed_usergroups => ['user', 'staff'] do 
+        #
+        #  load_page(:dashboard)
+        #
+        #end
 
-          load_page(:dashboard)
-
+        app.get '/admin', :allowed_usergroups => ['staff'] do
+          load_page(:admin)
         end
  
       end

@@ -1,3 +1,13 @@
+admin:
+  title: Administration panel
+  description: >
+               <p>Manage your web site</p>
+  config_site: Configuration               
+  console_contents: Contents
+  console_style: Style
+  console_structure: Structure    
+  console_media: Media
+  console_users: Users
 dashboard:
   configuration: Configuration
   media: Media storage

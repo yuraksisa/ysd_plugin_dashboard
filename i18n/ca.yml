@@ -1,3 +1,13 @@
+admin:
+  title: Panel d\'administració
+  description: >
+               <p>Gestioni la seva pàgina web</p>
+  config_site: Configuració               
+  console_contents: Els continguts
+  console_style: L\'estil
+  console_structure: L\'estructura 
+  console_media: Medis
+  console_users: Usuaris
 dashboard:
   configuration: Configuració
   media: magatzem Media

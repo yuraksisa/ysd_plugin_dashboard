@@ -1,3 +1,50 @@
+admin:
+  title: Panel de administración
+  description: >
+               <p class="top-margin-1line">¡Bienvenido al panel de administración de su sitio web!</p>
+               <p>Desde aquí podrá gestionar su sitio web:</p> 
+               <ul>
+                 <li>La estructura</li>
+                 <li>El estilo</li>
+                 <li>Los contenidos</li>
+               </ul>
+               <div class="container_12">
+                 <div class="grid_4">
+                   <div class="content_data_box">
+                     <p>Gestione los <strong>contenidos</strong>, la información que se va a mostrar en su
+                     sitio web.</p>
+                     <p>Los contenidos pueden ser páginas, artículos, fichas de productos, eventos, lugares o 
+                     cualquier otro tipo de información que va a mostrarse en su sitio web.</p>
+                     <p>Personalize los tipos de
+                     contenidos incluyendo información de lugares, precios, fotografías, comentarios, ...</p>
+                   </div>
+                 </div>
+                 <div class="grid_4">
+                   <div class="left-margin content_data_box">
+                     <p>Organize la <strong>estructura</strong> de su sitio web, la navegación del usuario a través
+                     de sus contenidos desde la página principal o <em>Home Page</em>.</p>
+                     <p>Para esto dispone de <em>menús</em>, <em>vistas</em> y <em>bloques</em>.</p>
+                     <p>Los menús definen la estructura jerárquica de navegación, las vistas crean listas de   
+                     contenidos y los bloques son nuestro sistema de <em>widgets</em>.</p>
+                   </div>
+                 </div>
+                 <div class="grid_4">
+                   <div class="left-margin content_data_box">
+                     <p>Ajuste el <strong>estilo</strong> de sus contenidos y de la página web, realizando
+                     modificaciones en el tema con css personalizado o incluyendo nuevas fuentes a través de 
+                     <a href="http://www.google.com/fonts">Google Fonts</a>.</p>
+                     <p>Defina nuevos estilos, modifique los estilos existentes. Disponemos de decenas de clases de estilo
+                     para formatear diferentes tipos de mensajes y botones.</p>
+                     <p>Personalice la <em>plantilla</em> de la página.</p>
+                   </div>
+                 </div>
+               </div>
+  config_site: Configuración sitio
+  console_contents: Los contenidos
+  console_structure: La estructura
+  console_style: El estilo
+  console_media: Medios
+  console_users: Usuarios
 dashboard:
   configuration: Configuración
   media: almacenamiento Media
