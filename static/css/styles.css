@@ -1,0 +1,12 @@
+#top, #header, #bottom, .content-actions {
+  display:none;
+}
+
+#container {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.content-header-wrapper {
+  margin-top: 0px;
+}

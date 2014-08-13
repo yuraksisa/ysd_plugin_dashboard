@@ -52,5 +52,48 @@ dashboard:
 site:
   settings:
     title: Configuración general
+  structure:
+    title: Estructura del sitio
+    public_area: Área pública
+    backend_area: Back-end
+    front_page: Página de inicio
+    main_menu: Menú principal
+  style:
+    title: Estilo del sitio
+    description: >
+                 <p>Puede personalizar el estilo de su sitio web de diversas formas:</p>
+                 <ul>
+                   <li>Añadiendo nuevos recursos</li>
+                   <li>Personalizando el css</li>
+                   <li>Redefiniendo el layout</li>
+                 </ul>
+                 <div class="container_12">
+                   <div class="grid_4">
+                     <div class="content_data_box">
+                        <p>¿Desea añadir o cambiar alguna de las fuentes de la página web? 
+                           Añada fácilmente una fuente de <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>,
+                           incluyendo la URL en los links externos para la <strong>configuración</strong>.</p>
+                     </div>
+                   </div>  
+                   <div class="grid_4">
+                     <div class="left-margin content_data_box">                       
+                        <p>Si desea definir una nueva clase css o modificar uno de los estilos del tema, añádalos a la <strong>hoja de 
+                        estilos</strong>. Estos estilos se incorporarán a los predefinidos.</p>
+                     </div>
+                   </div>
+                   <div class="grid_4">
+                     <div class="left-margin content_data_box">                   
+                        <p>Quiere que la cabecera de la página se muestre a todo el ancho. Modifique el <strong>layout</strong> 
+                        que se utiliza para "renderizar" las páginas de su sitio.</p>
+                     </div>
+                   </div>
+                 </div>
+    configuration: Configuración
+    extra_links: Links externos para recursos (google fonts, css, ...) separados por coma
+    css: Hoja de estilos
+    layout: Layout
   title: Título del sitio
   slogan: Slogan del sitio
+  logo: Logo del sitio
+  public_front_page: Página de inicio 
+  backend_front_page: Página de inicio (backend)

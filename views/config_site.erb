@@ -4,6 +4,7 @@
       data-remote="ajax" data-remote-method="PUT">
   <%= render_variable_input_text('site.title', t.site.title, 80, 80) %>
   <%= render_variable_textarea('site.slogan', t.site.slogan) %>
+  <%= render_variable_input_text('site.logo', t.site.logo, 100, 100) %>
   <div class="formrow-botonera">
   	<input type="submit" value="<%=t.entitymanagement.update%>" 
   	       class="button blue-button">

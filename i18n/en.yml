@@ -15,5 +15,21 @@ dashboard:
 site:
   settings:
     title: General settings
+  structure:
+    title: Site structure
+    public_area: Public area
+    backend_area: Back-end    
+    front_page: Home page
+    main_menu: Main menu    
+  style:
+    title: Site style
+    description: >
+    configuration: Configuration
+    extra_links: External resources links (google fonts, css, ...) comma separated
+    css: Stylesheet
+    layout: Layout        
   title: Site title
   slogan: Site slogan
+  logo: Site logo  
+  public_front_page: Public home page
+  backend_front_page: Back-end home page

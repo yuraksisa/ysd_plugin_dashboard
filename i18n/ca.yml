@@ -15,5 +15,21 @@ dashboard:
 site:
   settings:
     title: Configuració general
+  structure:
+    title: Estructura de la web
+    public_area: Àrea pública
+    backend_area: Back-end    
+    front_page: Pàgina d\'inici
+    main_menu: Menú principal
+  style:
+    title: Estil de la web
+    description: >
+    configuration: Configuració
+    extra_links: Links externs de recursos (google fonts, css, ...) separats per coma
+    css: Fulla d\'estils
+    layout: Layout            
   title: Títol de la web
   slogan: Slogan de la web
+  logo: Logo de la web  
+  public_front_page: Pàgina d\'inici
+  backend_front_page: Pàgina d\'inici (backend)

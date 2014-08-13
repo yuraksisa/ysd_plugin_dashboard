@@ -1,0 +1,51 @@
+<h2><%=t.site.style.title%></h2>
+<%=t.site.style.description%>
+<div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000">
+</div>
+      
+<div class="no-border no-background overflow ">
+    <ul id="content_tabs" class="no-border no-background"class="no-border no-background">  
+        <li class="no-border no-background" style="border:none; backgrond:none">
+         	  <a name="configuration" href="#css"><%=t.site.style.configuration%></a>
+        </li>
+        <li class="no-border no-background" style="border:none; backgrond:none">
+         	  <a name="css" href="#css"><%=t.site.style.css%></a>
+        </li>
+        <li class="no-border no-background" style="border:none; backgrond:none">
+           	  <a name="layout" href="#layout"><%=t.site.style.layout%></a>
+        </li>
+    </ul>
+    <div id="content">
+    	<div id="configuration">
+          <form name="variables" action="/variables" method="PUT" 
+             data-remote="ajax" data-remote-method="PUT">
+             <%= render_variable_textarea('site.extra_styles', t.site.style.extra_links) %>
+             <div class="formrow-botonera">
+  	           <input type="submit" value="<%=t.entitymanagement.update%>" 
+  	                  class="button blue-button">
+             </div>
+          </form>
+    	</div>
+   	    <div id="css">
+       	     <form name="templates" action="/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT">
+               <%= render_template_editor('default_theme_style', t.site.style.css) %>
+               <div class="formrow-botonera">
+  	              <input type="submit" value="<%=t.entitymanagement.update%>" 
+  	                     class="button blue-button">
+               </div>
+             </form>
+        </div>	
+        <div id="layout">
+             <form name="templates" action="/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT">
+               <%= render_template_editor('page_render', t.site.style.layout) %> 
+               <div class="formrow-botonera">
+  	              <input type="submit" value="<%=t.entitymanagement.update%>" 
+  	                     class="button blue-button">
+               </div>
+             </form>
+        </div>
+    </div>
+</div>
+

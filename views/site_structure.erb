@@ -1,0 +1,39 @@
+<h2><%=t.site.structure.title%></h2>
+<div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000"></div>
+<div class="container_12">
+  	<h3 class="bottom-border-solid"><%=t.site.structure.public_area%></h3>
+  <div class="grid_6">
+  	<h4><%=t.site.structure.front_page%></h4>
+    <form name="variables" action="/variables" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT">
+      <%= render_variable_input_text('site.anonymous_front_page', t.site.public_front_page, 80, 80) %>
+      <div class="formrow-botonera">
+  	    <input type="submit" value="<%=t.entitymanagement.update%>" 
+  	       class="button blue-button">
+      </div>
+    </form>
+    <iframe id="public_front_page" width="100%" height="300" class="border-box all-border-dotted all-space" style="display:none"></iframe>
+    <a href="/" class="right_text" style="display:block"><%=t.entitymanagement.edit%></a>
+  </div>
+  <div class="prefix_1 grid_5">
+  	<h4><%=t.site.structure.main_menu%></h4>
+       <div class="no-border no-background overflow ">
+          <ul id="content_tabs" class="no-border no-background"class="no-border no-background">  
+             <% main_menu.menu_items.each do |item| %>
+              <li class="no-border no-background" style="border:none; backgrond:none">
+              	  <a name="<%=item.id%>" href="#<%=item.id%>"><%=item.title%></a>
+              </li>
+             <% end %>
+          </ul>
+          <div id="content" class="top-margin">
+  	         <% main_menu.menu_items.each do |item| %>
+  	           <div id="<%=item.id%>">
+                  <iframe src="<%=item.link_route%>" width="100%" height="300" class="menu_item_frame border-box all-border-dotted all-space" style="display:none"></iframe>
+               </div>
+              <% end %>
+          </div>
+    </div>
+  </div>
+</div>
+
+ 

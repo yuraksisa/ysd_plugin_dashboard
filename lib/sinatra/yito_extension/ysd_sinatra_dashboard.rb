@@ -13,18 +13,37 @@ module Sinatra
         app.settings.translations = Array(app.settings.translations).push(File.expand_path(File.join(File.dirname(__FILE__), '..', '..', '..', 'i18n')))       
 
         #
-        # Dashboard
+        # Admin page
         #
-        #app.get '/dashboard', :allowed_usergroups => ['user', 'staff'] do 
-        #
-        #  load_page(:dashboard)
-        #
-        #end
-
         app.get '/admin', :allowed_usergroups => ['staff'] do
           load_page(:admin)
         end
+
+        #
+        # Site structure
+        #
+        app.get '/admin/console/site-structure', :allowed_usergroups => ['staff'] do
+          main_menu = Site::Menu.get('primary_links')
+          load_page(:site_structure, :locals => {:main_menu => main_menu})
+        end
  
+        #
+        # Site structure
+        #
+        app.get '/admin/console/site-style', :allowed_usergroups => ['staff'] do
+          load_page(:site_style)
+        end
+
+        #
+        # Serves static content
+        #
+        app.get '/dashboard/*' do
+
+           serve_static_resource(request.path_info.gsub(/^\/dashboard/,''), 
+              File.join(File.dirname(__FILE__), '..', '..', '..', 'static'),'dashboard') 
+
+        end
+
       end
 
     end
