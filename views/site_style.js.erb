@@ -4,12 +4,15 @@ require(['jquery','YSDForms'], function($, YSDForms) {
 
     YSDForms.improve();
     YSDForms.limit_text_area_content_size('.variable', 255);
-    
+
     $("#content > div").hide(); // Initially hide all content
     $("#content_tabs li:first").attr("id","current"); // Activate first tab
-    $("#content div:first").fadeIn(); // Show first tab content
+    $("#content > div:first").fadeIn(); // Show first tab content
     $('#content_tabs a').click(function(e) {
         e.preventDefault();
+        if ($(this).attr("name") == 'preview') {
+          ($('#home_frame')[0]).contentWindow.location.reload();
+        }
         if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
          return;       
         }
@@ -20,8 +23,6 @@ require(['jquery','YSDForms'], function($, YSDForms) {
           $('#' + $(this).attr('name')).fadeIn(); // Show content for current tab
         }
       });
-
-
 
   });
 

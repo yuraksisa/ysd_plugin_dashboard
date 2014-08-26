@@ -27,7 +27,8 @@ site:
     configuration: Configuració
     extra_links: Links externs de recursos (google fonts, css, ...) separats per coma
     css: Fulla d\'estils
-    layout: Layout            
+    layout: Layout
+    preview: Previsualització                
   title: Títol de la web
   slogan: Slogan de la web
   logo: Logo de la web  

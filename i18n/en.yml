@@ -27,7 +27,8 @@ site:
     configuration: Configuration
     extra_links: External resources links (google fonts, css, ...) comma separated
     css: Stylesheet
-    layout: Layout        
+    layout: Layout    
+    preview: Preview        
   title: Site title
   slogan: Site slogan
   logo: Site logo  

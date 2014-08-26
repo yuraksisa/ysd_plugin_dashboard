@@ -92,6 +92,7 @@ site:
     extra_links: Links externos para recursos (google fonts, css, ...) separados por coma
     css: Hoja de estilos
     layout: Layout
+    preview: Previsualización
   title: Título del sitio
   slogan: Slogan del sitio
   logo: Logo del sitio
