@@ -3,7 +3,7 @@
 <div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000">
 </div>
       
-<div class="no-border no-background overflow">
+<div class="no-border no-background overflow top-margin-1line">
     <ul id="content_tabs" class="no-border no-background"class="no-border no-background">  
         <li class="no-border no-background" style="border:none; backgrond:none">
          	  <a name="configuration" href="#css"><%=t.site.style.configuration%></a>
@@ -20,7 +20,7 @@
     </ul>
     <div id="content">
     	<div id="configuration" class="all-border-solid color-2 top-margin">
-          <form name="variables" action="/variables" method="PUT" 
+          <form name="variables" action="/api/variables" method="PUT" 
              data-remote="ajax" data-remote-method="PUT" class="all-space">
              <%= render_variable_textarea('site.extra_styles', t.site.style.extra_links) %>
              <div class="formrow-botonera">
@@ -30,7 +30,7 @@
           </form>
     	</div>
    	    <div id="css" class="all-border-solid color-2 top-margin">
-       	     <form name="templates" action="/templates" method="PUT" 
+       	     <form name="templates" action="/api/templates" method="PUT" 
       data-remote="ajax" data-remote-method="PUT" class="all-space">
                <%= render_template_editor('default_theme_style', t.site.style.css, '', 20) %>
                <div class="formrow-botonera">
@@ -42,7 +42,7 @@
         <div id="layout" class="all-border-solid color-2 top-margin">
              <div class="container_12">
                 <div class="grid_7">
-                   <form name="templates" action="/templates" method="PUT" 
+                   <form name="templates" action="/api/templates" method="PUT" 
       data-remote="ajax" data-remote-method="PUT" class="all-space">
                      <%= render_template_editor('page_render', t.site.style.layout, '', 20) %> 
                      <div class="formrow-botonera">

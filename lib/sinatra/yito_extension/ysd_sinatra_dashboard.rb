@@ -22,7 +22,7 @@ module Sinatra
         #
         # Site structure
         #
-        app.get '/admin/console/site-structure', :allowed_usergroups => ['staff'] do
+        app.get '/admin/site/structure', :allowed_usergroups => ['staff'] do
           main_menu = Site::Menu.get('primary_links')
           load_page(:site_structure, :locals => {:main_menu => main_menu})
         end
@@ -30,7 +30,7 @@ module Sinatra
         #
         # Site structure
         #
-        app.get '/admin/console/site-style', :allowed_usergroups => ['staff'] do
+        app.get '/admin/site/style', :allowed_usergroups => ['staff'] do
           load_page(:site_style)
         end
 

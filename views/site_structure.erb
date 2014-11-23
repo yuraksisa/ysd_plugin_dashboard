@@ -4,7 +4,7 @@
   	<h3 class="bottom-border-solid"><%=t.site.structure.public_area%></h3>
   <div class="grid_6">
   	<h4><%=t.site.structure.front_page%></h4>
-    <form name="variables" action="/variables" method="PUT" 
+    <form name="variables" action="/api/variables" method="PUT" 
       data-remote="ajax" data-remote-method="PUT">
       <%= render_variable_input_text('site.anonymous_front_page', t.site.public_front_page, 80, 80) %>
       <div class="formrow-botonera">

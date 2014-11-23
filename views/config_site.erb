@@ -1,6 +1,6 @@
 <h2><%=t.site.settings.title%></h2>
 <div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000"></div>
-<form name="variables" action="/variables" method="PUT" 
+<form name="variables" action="/api/variables" method="PUT" 
       data-remote="ajax" data-remote-method="PUT">
   <%= render_variable_input_text('site.title', t.site.title, 80, 80) %>
   <%= render_variable_textarea('site.slogan', t.site.slogan) %>
