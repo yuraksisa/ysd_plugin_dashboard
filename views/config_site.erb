@@ -1,4 +1,7 @@
-<h2><%=t.site.settings.title%></h2>
+<div class="top-navigation-bar">
+<h2 class="entity-title"><%=t.site.settings.title%></h2>
+</div>
+<div class="admin_content_wrapper">
 <div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000"></div>
 <form name="variables" action="/api/variables" method="PUT" 
       data-remote="ajax" data-remote-method="PUT">
@@ -10,3 +13,4 @@
   	       class="button blue-button">
   </div>
 </form>
+</div>
