@@ -1,9 +1,15 @@
-<h2><%=t.site.style.title%></h2>
-<%=t.site.style.description%>
-<div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000">
+<div class="top-navigation-bar">
+  <h2 class="entity-title"><%=t.site.style.title%></h2>
 </div>
-      
-<div class="no-border no-background overflow top-margin-1line">
+<div class="admin_content_wrapper">
+  <div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000">
+  </div>
+  <div class="container_12">
+    <div class="grid_12">
+      <%=t.site.style.description%>
+    </div>
+  </div>      
+  <div class="no-border no-background overflow top-margin-1line">
     <ul id="content_tabs" class="no-border no-background"class="no-border no-background">  
         <li class="no-border no-background" style="border:none; backgrond:none">
          	  <a name="configuration" href="#css"><%=t.site.style.configuration%></a>
@@ -64,5 +70,6 @@
             </div>
         </div>
     </div>
+  </div>
 </div>
 

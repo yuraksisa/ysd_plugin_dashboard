@@ -1,19 +1,23 @@
-<h2><%=t.site.structure.title%></h2>
-<div class="container_12">
-  <h3 class="bottom-border-solid"><%=t.site.structure.backend_area%></h3>
-  <div class="grid_6">
-    <h4><%=t.site.structure.front_page%></h4>
-    <form name="variables" action="/api/variables" method="PUT" 
+<div class="top-navigation-bar">
+  <h2 class="entity-title"><%=t.site.structure.title%></h2>
+</div>
+<div class="admin_content_wrapper">
+  <div class="container_12">
+    <h3 class="bottom-border-solid"><%=t.site.structure.backend_area%></h3>
+    <div class="grid_6">
+      <h4><%=t.site.structure.front_page%></h4>
+      <form name="variables" action="/api/variables" method="PUT" 
       data-remote="ajax" data-remote-method="PUT">
-      <%= render_variable_input_text('site.front_page', t.site.backend_front_page, 80, 80) %>
-      <div class="formrow-botonera">
-  	    <input type="submit" value="<%=t.entitymanagement.update%>" 
+        <%= render_variable_input_text('site.front_page', t.site.backend_front_page, 80, 80) %>
+        <div class="formrow-botonera">
+  	      <input type="submit" value="<%=t.entitymanagement.update%>" 
   	       class="button blue-button">
-      </div>
-    </form>
-    <iframe id="backend_front_page" width="100%" height="300" class="border-box all-border-dotted all-space" style="display:none"></iframe>    
+        </div>
+      </form>
+      <iframe id="backend_front_page" width="100%" height="300" class="border-box all-border-dotted all-space" style="display:none"></iframe>    
+    </div>
+    <div class="prefix_1 grid_5">
+    	<h4><%=t.site.structure.main_menu%></h4>
+    </div>  
   </div>
-  <div class="prefix_1 grid_5">
-  	<h4><%=t.site.structure.main_menu%></h4>
-  </div>  
 </div>
