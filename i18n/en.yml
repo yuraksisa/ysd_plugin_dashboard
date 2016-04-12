@@ -2,19 +2,21 @@ admin:
   title: Administration panel
   description: >
                <p>Manage your web site</p>
-  config_site: Configuration               
+  config_site: Website data               
   console_contents: Contents
   console_style: Style
   console_structure: Structure    
   console_media: Media
   console_users: Users
+  console_system: System
+  console_setup: Configuration  
 dashboard:
   configuration: Configuration
   media: Media storage
   files: Files storage
 site:
   settings:
-    title: General settings
+    title: Website data
   structure:
     title: Site structure
     public_area: Public area

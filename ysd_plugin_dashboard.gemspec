@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "ysd_plugin_dashboard"
-  s.version = "0.1.6"
+  s.version = "0.1.7"
   s.authors = ["Yurak Sisa Dream"]
   s.date    = "2013-11-07"
   s.email   = ["yurak.sisa.dream@gmail.com"]

@@ -34,6 +34,18 @@ module Sinatra
           load_page(:site_style)
         end
 
+        app.get '/admin/users', :allowed_usergroups => ['staff'] do
+          load_page(:admin_users)
+        end
+
+        app.get '/admin/system', :allowed_usergroups => ['staff'] do
+          load_page(:admin_system)
+        end
+
+        app.get '/admin/site/configuration', :allowed_usergroups => ['staff'] do
+          load_page(:admin_configuration)
+        end
+
         #
         # Serves static content
         #

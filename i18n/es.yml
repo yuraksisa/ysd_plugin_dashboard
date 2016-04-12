@@ -39,19 +39,32 @@ admin:
                    </div>
                  </div>
                </div>
-  config_site: Configuración sitio
-  console_contents: Los contenidos
-  console_structure: La estructura
-  console_style: El estilo
+  config_site: Datos de la web
+  console_contents: Contenidos
+  console_structure: Estructura
+  console_style: Estilo
   console_media: Medios
   console_users: Usuarios
+  console_system: Sistema
+  console_setup: Configuración
+admin_users:
+  title: Usuarios
+  users: Usuarios
+  groups: Grupos
+admin_system:
+  title: Sistema
+  logs: Trazas
+admin_configuration:
+  title: Configuración
+  variables: Variables
+  secure_variables: Variables seguras
 dashboard:
   configuration: Configuración
   media: almacenamiento Media
   files: almacenamiento Ficheros
 site:
   settings:
-    title: Configuración general
+    title: Datos de la web
   structure:
     title: Estructura del sitio
     public_area: Área pública
