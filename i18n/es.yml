@@ -40,9 +40,9 @@ admin:
                  </div>
                </div>
   config_site: Datos de la web
-  console_contents: Contenidos
-  console_structure: Estructura
-  console_style: Estilo
+  console_contents: Gestor Contenidos
+  console_structure: Estructura de la web
+  console_style: Estilo de la web
   console_media: Medios
   console_users: Usuarios
   console_system: Sistema
