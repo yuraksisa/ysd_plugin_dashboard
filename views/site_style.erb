@@ -33,7 +33,7 @@
    	    <div id="css" class="all-border-solid color-2 top-margin">
        	     <form name="templates" action="/api/templates" method="PUT" 
       data-remote="ajax" data-remote-method="PUT" class="all-space">
-               <%= render_template_editor('default_theme_style', t.site.style.css, '', 20) %>
+               <%= render_template_editor('default_theme_style', t.site.style.css, '', 15) %>
                <div class="formrow-botonera">
   	              <input type="submit" value="<%=t.entitymanagement.update%>" 
   	                     class="button blue-button">
@@ -45,7 +45,7 @@
                 <div class="grid_7">
                    <form name="templates" action="/api/templates" method="PUT" 
       data-remote="ajax" data-remote-method="PUT" class="all-space">
-                     <%= render_template_editor('page_render', t.site.style.layout, '', 20) %> 
+                     <%= render_template_editor('page_render', t.site.style.layout, '', 15) %> 
                      <div class="formrow-botonera">
   	                    <input type="submit" value="<%=t.entitymanagement.update%>" 
   	                     class="button blue-button">

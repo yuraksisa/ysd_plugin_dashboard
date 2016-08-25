@@ -1,0 +1,40 @@
+<div class="top-navigation-bar"  style="display:none">
+  <h2 class="entity-title"><%=t.site.webmaster.title%></h2>
+</div>
+<div class="admin_content_wrapper">
+  <div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000">
+  </div>   
+  <div class="no-border no-background overflow top-margin-1line">
+    <ul id="content_tabs" class="no-border no-background"class="no-border no-background">  
+        <li class="no-border no-background" style="border:none; backgrond:none">
+         	  <a name="robots_txt" href="#robots_txt"><%=t.site.webmaster.robots_txt%></a>
+        </li>
+        <li class="no-border no-background" style="border:none; backgrond:none">
+         	  <a name="sitemap_xml" href="#sitemap_xml"><%=t.site.webmaster.sitemap_xml%></a>
+        </li>
+    </ul>
+    <div id="content">
+   	    <div id="robots_txt" class="all-border-solid color-2 top-margin">
+       	     <form name="templates" action="/api/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT" class="all-space">
+               <%= render_template_editor('robots_txt', t.site.webmaster.robots_txt, '', 15) %>
+               <div class="formrow-botonera">
+  	              <input type="submit" value="<%=t.entitymanagement.update%>" 
+  	                     class="button blue-button">
+               </div>
+             </form>
+        </div>	
+        <div id="sitemap_xml" class="all-border-solid color-2 top-margin">
+          <form name="templates" action="/api/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT" class="all-space">
+            <%= render_template_editor('sitemap_xml', t.site.webmaster.sitemap_xml, '', 15) %> 
+            <div class="formrow-botonera">
+              <input type="submit" value="<%=t.entitymanagement.update%>" 
+  	                     class="button blue-button">
+            </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+

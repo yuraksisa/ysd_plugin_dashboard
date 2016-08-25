@@ -34,6 +34,13 @@ module Sinatra
           load_page(:site_style)
         end
 
+        #
+        # Site webmaster tools
+        #
+        app.get '/admin/site/webmaster', :allowed_usergroups => ['staff'] do
+          load_page(:site_webmaster)
+        end
+
         app.get '/admin/users', :allowed_usergroups => ['staff'] do
           load_page(:admin_users)
         end

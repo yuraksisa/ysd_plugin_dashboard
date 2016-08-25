@@ -43,6 +43,7 @@ admin:
   console_contents: Gestor Contenidos
   console_structure: Estructura de la web
   console_style: Estilo de la web
+  console_webmaster: Herramientas webmaster
   console_media: Medios
   console_users: Usuarios
   console_system: Sistema
@@ -58,6 +59,7 @@ admin_configuration:
   title: Configuración
   variables: Variables
   secure_variables: Variables seguras
+  external_accounts: Cuentas externas
 dashboard:
   configuration: Configuración
   media: almacenamiento Media
@@ -71,6 +73,10 @@ site:
     backend_area: Back-end
     front_page: Página de inicio
     main_menu: Menú principal
+  webmaster:
+    title: Webmaster
+    robots_txt: robots.txt
+    sitemap_xml: sitemap.xml
   style:
     title: Estilo del sitio
     description: >
