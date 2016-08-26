@@ -24,6 +24,10 @@ require(['jquery','YSDForms'], function($, YSDForms) {
         }
       });
 
+    $('#contents_sitemap_button').bind('click', function(){
+      $('#content_sitemap_result').load('/admin/cms/webaster/contents_sitemap #contents_site_map');
+    });
+
   });
 
 });

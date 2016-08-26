@@ -77,6 +77,7 @@ site:
     title: Webmaster
     robots_txt: robots.txt
     sitemap_xml: sitemap.xml
+    sitemap_from_contents: Obtiene url de los contenidos
   style:
     title: Estilo del sitio
     description: >
