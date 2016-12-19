@@ -1,0 +1,59 @@
+	  <table id="elements_table" class="table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header-title" scope="col" style="width:20%">Elemento</th>
+            <th class="table-header-title" scope="col" style="width:30%">Descripción</th>
+            <th class="table-header-title" scope="col" style="width:50%">Valor</th>
+          </tr>
+        </thead>
+        <tbody id="elements_tbody" class="table-tbody">             
+          <tr>
+          	<td class="table-cell"><b>Titulo página de reservas</b></td>
+          	<td class="table-cell" style="color:#CCC">
+          	  <p>Corresponde al elemento title de página de reservas (URL /p/booking/start)</p>
+          	</td>
+          	<td class="table-cell">
+              <form name="variables" action="/api/variables" method="PUT" 
+             data-remote="ajax" data-remote-method="PUT" class="all-space">
+                <%= render_variable_textarea('booking.page_title', nil) %>
+                <div class="formrow-botonera">
+                  <input type="submit" value="<%=t.entitymanagement.update%>" 
+                      class="button blue-button">
+                </div>
+              </form>
+            </td>
+          </tr>
+          <tr>
+          	<td class="table-cell"><b>Descripción de la página de reservas</b></td>
+          	<td class="table-cell" style="color:#CCC">
+          	  <p>Corresponde al meta description de la página de reservas (URL /p/booking/start)</p>
+          	</td>
+          	<td class="table-cell">
+              <form name="variables" action="/api/variables" method="PUT" 
+             data-remote="ajax" data-remote-method="PUT" class="all-space">
+                <%= render_variable_textarea('booking.page_description', nil) %>
+                <div class="formrow-botonera">
+                  <input type="submit" value="<%=t.entitymanagement.update%>" 
+                      class="button blue-button">
+                </div>
+              </form>
+            </td>
+          </tr>          
+          <tr>
+            <td class="table-cell"><b>Palabras claves de la página de reservas</b></td>
+            <td class="table-cell" style="color:#CCC">
+              <p>Corresponde al meta keywords de la página de reservas (URL /p/booking/start)</p>
+            </td>
+            <td class="table-cell">
+              <form name="variables" action="/api/variables" method="PUT" 
+             data-remote="ajax" data-remote-method="PUT" class="all-space">
+                <%= render_variable_textarea('booking.page_keywords', nil) %>
+                <div class="formrow-botonera">
+                  <input type="submit" value="<%=t.entitymanagement.update%>" 
+                      class="button blue-button">
+                </div>
+              </form>
+            </td>
+          </tr>                   
+        </tbody>
+      </table>

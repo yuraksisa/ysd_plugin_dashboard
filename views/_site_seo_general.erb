@@ -1,0 +1,69 @@
+	  <table id="elements_table" class="table">
+        <thead class="table-header">
+          <tr>
+            <th class="table-header-title" scope="col" style="width:20%">Elemento</th>
+            <th class="table-header-title" scope="col" style="width:30%">Descripción</th>
+            <th class="table-header-title" scope="col" style="width:50%">Valor</th>    
+          </tr>
+        </thead>
+        <tbody id="elements_tbody" class="table-tbody">             
+          <tr>
+          	<td class="table-cell"><b>Titulo del sitio</b></td>
+          	<td class="table-cell" style="color:#CCC">
+          	  <p>Es el título del sitio. Usos:</p>
+          	  <ul>
+          	    <li>Es el texto que se configura en la cabecera H1 de la plantilla de todas las páginas de la web</li>
+          	    <li>Se añade (si está configurado así) a al elemento title de cada una de las páginas web del sitio</li>
+          	  </ul>
+          	</td>
+          	<td class="table-cell">
+              <form name="variables" action="/api/variables" method="PUT" 
+             data-remote="ajax" data-remote-method="PUT" class="all-space">
+                <%= render_variable_textarea('site.title', nil) %>
+                <div class="formrow-botonera">
+                  <input type="submit" value="<%=t.entitymanagement.update%>" 
+                      class="button blue-button">
+                </div>
+              </form>
+            </td>
+          </tr>
+          <tr>
+          	<td class="table-cell"><b>Slogan del sitio</b></td>
+          	<td class="table-cell" style="color:#CCC">
+          	  <p>Es el slogan del sitio. Usos:</p>
+          	  <ul>
+          	    <li>Es el texto que se configura en la cabecera H1 de la plantilla de todas las páginas de la web</li>
+          	  </ul>
+          	</td>
+          	<td class="table-cell">
+              <form name="variables" action="/api/variables" method="PUT" 
+             data-remote="ajax" data-remote-method="PUT" class="all-space">
+                <%= render_variable_textarea('site.slogan', nil) %>
+                <div class="formrow-botonera">
+                  <input type="submit" value="<%=t.entitymanagement.update%>" 
+                      class="button blue-button">
+                </div>
+              </form>
+            </td>
+          </tr>          
+          <tr>
+          	<td class="table-cell"><b>Plantilla páginas web</b></td>
+          	<td class="table-cell" style="color:#CCC">
+              Es la plantilla que se utiliza en el proceso de construcción de cada una de las
+              páginas webs del sitio. Incluye la cabecera, el menú principal y el pie de página
+              entre otros elementos. Además, define las secciones que podrán utilizarse para 
+              incrustar diferentes bloques.
+          	</td>
+          	<td class="table-cell">
+          		<%if template = ContentManagerSystem::Template.first({:name => 'page_render'}) %>
+          		<pre>
+          		<%= template.excerpt(200).gsub('<','&lt;').gsub('>','&gt;') %>
+          		</pre>
+          		<%end%>
+          	  <div class="centered_text">
+                <a href="/admin/site/style#layout">Editar</a>
+              </div>
+            </td>
+          </tr>          
+        </tbody>
+      </table>

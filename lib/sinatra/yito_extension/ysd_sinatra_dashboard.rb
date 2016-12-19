@@ -15,14 +15,46 @@ module Sinatra
         #
         # Admin page
         #
-        app.get '/admin', :allowed_usergroups => ['staff'] do
+        app.get '/admin', :allowed_usergroups => ['staff','webmaster','user'] do
           load_page(:admin)
+        end
+
+        #
+        # SEO
+        #
+        app.get '/admin/seo', :allowed_usergroups => ['staff','webmaster'] do 
+
+          @cms_page_count = ContentManagerSystem::Content.count({type: 'page'})
+          @cms_page_published_count = ContentManagerSystem::Content.count({type: 'page', publishing_state_id: 'published'})
+          @cms_articles_count = ContentManagerSystem::Content.count({type: 'story'})
+          @cms_articles_published_count = ContentManagerSystem::Content.count({type: 'story', publishing_state_id: 'published'})
+
+          load_page :site_seo
+
+        end
+
+        #
+        # Site definition
+        #
+        app.get '/admin/site', :allowed_usergroups => ['staff','webmaster'] do 
+
+          load_page :site
+
+        end
+
+        #
+        # Site configuration : Site name, description and logo
+        #
+        app.get '/admin/site/config', :allowed_usergroups => ['staff','webmaster'] do
+    
+          load_page :config_site
+
         end
 
         #
         # Site structure
         #
-        app.get '/admin/site/structure', :allowed_usergroups => ['staff'] do
+        app.get '/admin/site/structure', :allowed_usergroups => ['staff','webmaster'] do
           main_menu = Site::Menu.get('primary_links')
           load_page(:site_structure, :locals => {:main_menu => main_menu})
         end
@@ -30,14 +62,14 @@ module Sinatra
         #
         # Site structure
         #
-        app.get '/admin/site/style', :allowed_usergroups => ['staff'] do
+        app.get '/admin/site/style', :allowed_usergroups => ['staff','webmaster'] do
           load_page(:site_style)
         end
 
         #
         # Site webmaster tools
         #
-        app.get '/admin/site/webmaster', :allowed_usergroups => ['staff'] do
+        app.get '/admin/site/webmaster', :allowed_usergroups => ['staff','webmaster'] do
           load_page(:site_webmaster)
         end
 

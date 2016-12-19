@@ -39,6 +39,8 @@ admin:
                    </div>
                  </div>
                </div>
+  site: Sitio web
+  seo: SEO
   config_site: Datos de la web
   console_contents: Gestor Contenidos
   console_structure: Estructura de la web
@@ -111,10 +113,19 @@ site:
     configuration: Configuración
     extra_links: Links externos para recursos (google fonts, css, ...) separados por coma
     css: Hoja de estilos
-    layout: Layout
+    layout: Plantilla (layout)
     preview: Previsualización
   title: Título del sitio
   slogan: Slogan del sitio
   logo: Logo del sitio
   public_front_page: Página de inicio 
   backend_front_page: Página de inicio (backend)
+admin_site:
+  title: Sitio web
+admin_menu:
+  web_site: Sitio web
+seo:
+  title: SEO
+  general: General
+  cms: Gestor de contenidos
+  booking: Sistema de reservas
