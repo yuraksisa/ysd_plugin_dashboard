@@ -9,7 +9,9 @@ admin:
   console_media: Media
   console_users: Users
   console_system: System
-  console_setup: Configuration  
+  console_setup: Configuration
+  console_album: Albums (media)  
+  console_redirects: HTTP Redirects
 dashboard:
   configuration: Configuration
   media: Media storage

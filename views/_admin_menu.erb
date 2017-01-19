@@ -20,26 +20,28 @@
    </li>    
   </ul> 
   <ul>
-   <li class='<%if ['/admin/site/config','/admin/site/structure','/admin/site/style','/admin/site/webmaster', '/admin/cms/blocks', '/admin/cms/menu-management'].index(request.path)%>active <%end%>has-sub'><a href='#'><%=t.admin_menu.web_site%></a>
+   <li class='<%if ['/admin/site/config','/admin/site/structure','/admin/site/style','/admin/site/webmaster', '/admin/cms/blocks', '/admin/cms/menu-management','/admin/cms/redirects'].index(request.path)%>active <%end%>has-sub'><a href='#'><%=t.admin_menu.web_site%></a>
       <ul>
         <li><a href='/admin/site/config'><%=t.admin.config_site%></a></li>
         <li><a href='/admin/site/style'><%=t.admin.console_style%></a></li>
         <li><a href='/admin/site/webmaster'><%=t.admin.console_webmaster%></a></li>
         <li><a href='/admin/site/structure'><%=t.admin.console_structure%></a></li>
+        <li><a href='/admin/cms/redirects'><%=t.admin.console_redirects%></a></li>
         <li><a href='/admin/cms/blocks'><%=t.console_cms.blocks%></a></li>
-        <li><a href='/admin/cms/menu-management'><%=t.console_cms.menus%></a></li>                
+        <li><a href='/admin/cms/menu-management'><%=t.console_cms.menus%></a></li>
       </ul>    
    </li>    
   </ul> 
   <ul>
    <li class='<%if ['/admin/cms/content/new','/admin/cms/content-types','/admin/cms/contents','/admin/cms/comments','/admin/cms/taxonomy',
-   '/admin/cms/views'].index(request.path)%>active <%end%>has-sub'><a href='#'><%=t.admin.console_contents%></a>
+   '/admin/cms/views','/admin/media/album'].index(request.path)%>active <%end%>has-sub'><a href='#'><%=t.admin.console_contents%></a>
       <ul>
         <li><a href='/admin/cms/content/new'><%=t.console_cms.new_content%></a></li>
         <li><a href='/admin/cms/content-types'><%=t.console_cms.content_types%></a></li>
         <li><a href='/admin/cms/contents'><%=t.console_cms.contents%></a></li>
         <li><a href='/admin/cms/taxonomy'><%=t.console_cms.comments%></a></li>
         <li><a href='/admin/cms/views'><%=t.console_cms.views%></a></li>
+        <li><a href='/admin/media/album'><%=t.console_media.albums%></a></li>
       </ul>    
    </li>    
   </ul>   

@@ -9,7 +9,9 @@ admin:
   console_media: Medis
   console_users: Usuaris
   console_system: Sistema
-  console_setup: Configuració  
+  console_setup: Configuració 
+  console_album: Àlbums (medis)
+  console_redirects: Redireccions HTTP
 dashboard:
   configuration: Configuració
   media: magatzem Media

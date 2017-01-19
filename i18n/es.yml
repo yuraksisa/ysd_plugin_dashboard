@@ -50,6 +50,8 @@ admin:
   console_users: Usuarios
   console_system: Sistema
   console_setup: Configuración
+  console_album: Álbums (medios)
+  console_redirects: Redirecciones HTTP
 admin_users:
   title: Usuarios
   users: Usuarios
