@@ -29,9 +29,19 @@ site:
     title: Estil de la web
     description: >
     configuration: Configuració
-    extra_links: Links externs de recursos (google fonts, css, ...) separats per coma
-    css: Fulla d\'estils
-    layout: Layout
+    layout: Plantilla frontend
+    layout_detail: Plantillas que s'empra per generar les pàgines del frontend
+    javascript_app: JS frontend
+    javascript_app_detail: Fitxer amb el codi del front-end generat amb require.js
+    javascript_resources: Recursos JS frontend
+    javascript_resources_detail: URL dels JS separats per comes
+    css: Estils
+    css_app: CSS frontend
+    css_app_detail: CSS frontend compactat
+    css_resources: Recursos CSS frontend
+    css_resources_detail: Fulles d\'estils externes separades por comes
+    extra_links: Links
+    extra_links_detail: Links externs de recursos (google fonts, css, ...) separats per coma
     preview: Previsualització                
   title: Títol de la web
   slogan: Slogan de la web

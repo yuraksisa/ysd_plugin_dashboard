@@ -3,60 +3,99 @@
 </div>
 <div class="admin_content_wrapper">
   <div data-alerts="alerts" data-titles="{'success':'<%=t.entitymanagement.success%>','warning':'<%=t.entitymanagement.warning%>','error':'<%=t.entitymanagement.error%>'}" data-fade="10000">
-  </div>   
+  </div>
   <div class="no-border no-background overflow top-margin-1line">
     <ul id="content_tabs" class="no-border no-background"class="no-border no-background">  
         <li class="no-border no-background" style="border:none; backgrond:none">
-         	  <a name="configuration" href="#css"><%=t.site.style.configuration%></a>
+            <a name="layout" href="#layout"><%=t.site.style.layout%></a>
         </li>
         <li class="no-border no-background" style="border:none; backgrond:none">
-         	  <a name="css" href="#css"><%=t.site.style.css%></a>
+            <a name="js_resources" href="#js-resources"><%=t.site.style.javascript_resources%></a>
+        </li>        
+        <li class="no-border no-background" style="border:none; backgrond:none">
+            <a name="js_app" href="#js-app"><%=t.site.style.javascript_app%></a>
         </li>
         <li class="no-border no-background" style="border:none; backgrond:none">
-           	  <a name="layout" href="#layout"><%=t.site.style.layout%></a>
-        </li>
+            <a name="css_resources" href="#css-resources"><%=t.site.style.css_resources%></a>
+        </li>        
         <li class="no-border no-background" style="border:none; backgrond:none">
-           	  <a name="preview" href="#preview"><%=t.site.style.preview%></a>
+            <a name="css_app" href="#css-app"><%=t.site.style.css_app%></a>
+        </li>        
+        <li class="no-border no-background" style="border:none; backgrond:none">
+           	<a name="preview" href="#preview"><%=t.site.style.preview%></a>
         </li>
     </ul>
     <div id="content">
-    	<div id="configuration" class="all-border-solid color-2 top-margin">
-          <form name="variables" action="/api/variables" method="PUT" 
-             data-remote="ajax" data-remote-method="PUT" class="all-space">
-             <%= render_variable_textarea('site.extra_styles', t.site.style.extra_links) %>
-             <div class="formrow-botonera">
-  	           <input type="submit" value="<%=t.entitymanagement.update%>" 
-  	                  class="button blue-button">
-             </div>
-          </form>
-    	</div>
-   	    <div id="css" class="all-border-solid color-2 top-margin">
-       	     <form name="templates" action="/api/templates" method="PUT" 
-      data-remote="ajax" data-remote-method="PUT" class="all-space">
-               <%= render_template_editor('default_theme_style', t.site.style.css, '', 15) %>
-               <div class="formrow-botonera">
-  	              <input type="submit" value="<%=t.entitymanagement.update%>" 
-  	                     class="button blue-button">
-               </div>
-             </form>
-        </div>	
         <div id="layout" class="all-border-solid color-2 top-margin">
              <div class="container_12">
-                <div class="grid_7">
-                   <form name="templates" action="/api/templates" method="PUT" 
+                <div class="grid_12">
+                   <form name="templates" action="/api/templates" method="PUT"
       data-remote="ajax" data-remote-method="PUT" class="all-space">
-                     <%= render_template_editor('page_render', t.site.style.layout, '', 15) %> 
+                     <%= render_template_editor('page_render', t.site.style.layout_detail, '', 15) %>
                      <div class="formrow-botonera">
-  	                    <input type="submit" value="<%=t.entitymanagement.update%>" 
-  	                     class="button blue-button">
+                        <input type="submit" value="<%=t.entitymanagement.update%>" 
+                         class="button blue-button">
                      </div>
                    </form>
                  </div>
-                 <div class="grid_5">
-                  <img src="/img/layout.jpg" class="top-margin-1line"/>
-                </div>
              </div>
         </div>
+        <div id="js_resources" class="all-border-solid color-2 top-margin">
+             <div class="container_12">
+                <div class="grid_12">
+                    <form name="templates" action="/api/templates" method="PUT"
+      data-remote="ajax" data-remote-method="PUT" class="all-space">
+                     <%= render_template_editor('javascript_resources', t.site.style.javascript_resources_detail, '', 15) %>
+                     <div class="formrow-botonera">
+                        <input type="submit" value="<%=t.entitymanagement.update%>" 
+                         class="button blue-button">
+                     </div>
+                   </form>
+                 </div>
+             </div>
+        </div>
+        <div id="js_app" class="all-border-solid color-2 top-margin">
+             <div class="container_12">
+                <div class="grid_12">
+                   <form name="templates" action="/api/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT" class="all-space">
+                     <%= render_template_editor('javascript_app', t.site.style.javascript_app_detail, '', 15) %>
+                     <div class="formrow-botonera">
+                        <input type="submit" value="<%=t.entitymanagement.update%>" 
+                         class="button blue-button">
+                     </div>
+                   </form>
+                 </div>
+             </div>
+        </div>
+        <div id="css_resources" class="all-border-solid color-2 top-margin">
+             <div class="container_12">
+                <div class="grid_12">
+                   <form name="templates" action="/api/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT" class="all-space">
+                     <%= render_template_editor('css_resources', t.site.style.css_resources_detail, '', 15) %>
+                     <div class="formrow-botonera">
+                        <input type="submit" value="<%=t.entitymanagement.update%>" 
+                         class="button blue-button">
+                     </div>
+                   </form>
+                 </div>
+             </div>
+        </div>
+        <div id="css_app" class="all-border-solid color-2 top-margin">
+             <div class="container_12">
+                <div class="grid_12">
+                   <form name="templates" action="/api/templates" method="PUT" 
+      data-remote="ajax" data-remote-method="PUT" class="all-space">
+                     <%= render_template_editor('css_app', t.site.style.css_app_detail, '', 15) %>
+                     <div class="formrow-botonera">
+                        <input type="submit" value="<%=t.entitymanagement.update%>" 
+                         class="button blue-button">
+                     </div>
+                   </form>
+                 </div>
+             </div>
+        </div>        
         <div id="preview" class="all-border-solid color-2 top-margin">
         	<div class="container_12">
                <div class="grid_12">

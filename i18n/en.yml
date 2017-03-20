@@ -29,9 +29,18 @@ site:
     title: Site style
     description: >
     configuration: Configuration
-    extra_links: External resources links (google fonts, css, ...) comma separated
+    layout: Frontend layout 
+    javascript_app: Frontend JS
+    javascript_app_detail: JS front-end app file generated with require.js
+    javascript_resources: Frontend JS Resources
+    javascript_resources_detail: List of JS URL comma separated
     css: Stylesheet
-    layout: Layout    
+    css_app: Frontend CSS
+    css_app_detail: Frontend CSS        
+    css_resources: Frontend LINK
+    css_resources_detail: External Stylesheet URL comma separated
+    extra_links: Links
+    extra_links_detail: External resources links (google fonts, css, ...) comma separated
     preview: Preview        
   title: Site title
   slogan: Site slogan

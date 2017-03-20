@@ -113,9 +113,20 @@ site:
                    </div>
                  </div>
     configuration: Configuración
-    extra_links: Links externos para recursos (google fonts, css, ...) separados por coma
+    detail: Utilizar para redefinir el front-end plantilla - JS - CSS 
+    layout: Plantilla front end
+    layout_detail: Plantilla que se utiliza para generar las páginas del frontend 
+    javascript_app: JS frontend
+    javascript_app_detail: Fichero con el código del frontend generado con require.js 
+    javascript_resources: Recursos JS frontend
+    javascript_resources_detail: URL de los recursos JS separados por comas 
     css: Hoja de estilos
-    layout: Plantilla (layout)
+    css_app: CSS frontend    
+    css_app_detail: CSS frontend compactado 
+    css_resources: Recursos LINK frontend
+    css_resources_detail: Hojas de estilo externas separadas por comas 
+    extra_links: Links
+    extra_links_detail: URL para las etiquetas LINK separados por coma
     preview: Previsualización
   title: Título del sitio
   slogan: Slogan del sitio
